@@ -15,7 +15,7 @@ class CalcMath:     #no need to put self here, or BoxLayout or App or some shit 
     def multiply(self, x, y):
         return float(x) * float(y)
 
-#hello, this a test
+#I ve got a glock in my 'rari
 
 class Box(BoxLayout):
     def __init__(self, **kwargs):
@@ -41,9 +41,6 @@ class Box(BoxLayout):
     def exit(self):
         App.get_running_app().stop()
 
-#so, this is test 2, a second change
-
-#so, hoepfully this will be a branch changesdlpsdpkpmpm
 
 class Calc(App):
     def build(self):
