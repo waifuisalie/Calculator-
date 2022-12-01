@@ -15,6 +15,7 @@ class CalcMath:     #no need to put self here, or BoxLayout or App or some shit 
     def multiply(self, x, y):
         return float(x) * float(y)
 
+#hello, this a test
 
 class Box(BoxLayout):
     def __init__(self, **kwargs):
@@ -39,6 +40,8 @@ class Box(BoxLayout):
 
     def exit(self):
         App.get_running_app().stop()
+
+#so, this is test 2, a second change
 
 class Calc(App):
     def build(self):
