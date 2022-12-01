@@ -1,0 +1,40 @@
+<Box>
+    orientation: 'vertical'
+    Label: 
+        text: 'Calculator'
+    BoxLayout:
+        GridLayout:
+            rows: 1
+            cols: 4
+            Label:
+                text: '1° Operator:'
+            TextInput:
+                id: op1
+            Label:
+                text: '2° Operator:'
+            TextInput:
+                id: op2
+            
+    BoxLayout:
+        Button:
+            text: '+'
+            on_press: root.add_fr(op1.text, op2.text)
+        Button:
+            text: '-'
+            on_press: root.subtract_fr(op1.text, op2.text)
+        Button:
+            text: 'x'
+            on_press: root.multiply_fr(op1.text, op2.text)
+        Button:
+            text: '/'
+            on_press: root.divide_fr(op1.text, op2.text)
+        Button:
+            text: 'CE'
+            on_press: root.clear()
+
+    Label:
+        id: result 
+    Button:
+        id: exit
+        on_press: root.exit()
+        markup: True
